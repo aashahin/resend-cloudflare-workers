@@ -1,0 +1,14 @@
+name = "resend-service"
+main = "src/worker.js"
+workers_dev = true
+compatibility_date = "2025-06-10"
+
+[observability]
+enabled = true
+
+# Environment variables for production
+[vars]
+# Add any public environment variables here
+
+# Secret environment variables (set these using wrangler secret put)
+# RESEND_API_KEY = "your-resend-api-key"

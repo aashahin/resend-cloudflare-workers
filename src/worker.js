@@ -49,8 +49,8 @@ export default {
 
       // Send email using Resend
       const res = await resend.emails.send({
-        from: 'noreply@abdelrahman.co', // Using your domain
-        to: 'contact@abdelrahman.co', // Your receiving email
+        from: 'website@abdelrahman.co', // Using your domain
+        to: 'info@abdelrahman.co', // Your receiving email
         subject: subject, // Use the subject provided by the user
         html: `
           <h2>New Contact Form Submission</h2>

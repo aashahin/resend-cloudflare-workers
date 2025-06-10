@@ -27,11 +27,8 @@ export default {
       const resend = new Resend(env.RESEND_API_KEY);
 
       // Parse form data
-      const data = await request.formData();
-      const name = data.get("name");
-      const email = data.get("email");
-      const subject = data.get("subject");
-      const message = data.get("message");
+      const data = await request.json();
+			const {name, email, subject, message} = data;
 
       // Validate required fields
       if (!name || !email || !subject || !message) {
